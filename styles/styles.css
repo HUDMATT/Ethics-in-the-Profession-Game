@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 20px;
+}
+
+#scenarioText {
+    white-space: pre-wrap; 
+    overflow: hidden; 
+    position: relative;
+    display: inline-block;
+}
+
+.typing-cursor {
+    display: inline-block;
+    width: 0.5em;
+    height: 1em;
+    background-color: green;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes blink-caret {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn .2s ease-in;
+}
+
+button {
+    background-color: black;
+    color: green;
+    border: 1px solid green;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
+button:hover {
+    background-color: green;
+    color: black;
+}
