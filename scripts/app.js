@@ -45,7 +45,6 @@ function startGame() {
     document.getElementById("choice1").style.display = "none";
     document.getElementById("choice2").style.display = "none";
     document.getElementById("start").style.display = "none";
-    document.getElementById("coontinue").innerHTML = "Continue";
     document.getElementById("continue").style.display = "none";
     document.getElementById("scenario").style.display = "block";
     typeEffect(document.getElementById("scenarioText"), 
